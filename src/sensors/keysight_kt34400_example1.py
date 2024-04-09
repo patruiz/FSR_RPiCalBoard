@@ -12,6 +12,7 @@ Requires Python 3.6 or newer and keysight_kt34400 Python module installed.
 import keysight_kt34400 as m
 import numpy as np # Required by keysight_kt34400
 import datetime
+import time
 
 
 def main():
@@ -22,11 +23,11 @@ def main():
     Libraries Connection Expert documentation.
     See driver help file topic 'Creating a Driver Instance' for constructor options details.
     """
-    resource_name = "MyVisaAlias"
-    #resource_name = "TCPIP0::127.0.0.1::INSTR"
+    # resource_name = "MyVisaAlias"
+    resource_name = 'USB0::0x2A8D::0x8E01::CN62180061::0::INSTR'
     idQuery = True
     reset   = True
-    options = "QueryInstrStatus=False, Simulate=True, Trace=False"
+    options = "QueryInstrStatus=False, Simulate=False, Trace=False"
 
     try:
         print("\n  keysight_kt34400 Python API Example1\n")
