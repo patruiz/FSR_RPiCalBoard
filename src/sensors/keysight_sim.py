@@ -8,7 +8,7 @@ def main():
    #resource_name = "USB0::2391::291::SN_001001::INSTR"
    id_query = False
    reset = False
-   options = "Simulate=False, QueryInstrStatus=True"
+   options = "Simulate=True, QueryInstrStatus=True"
 
    try:
       # Call driver constructor with options
