@@ -90,3 +90,10 @@
   Error -   0.051308 s     16.0 mS  VI_ERROR_IO: I/O error
    Info -   0.051588 s    280.2 uS  --- Kt34400.Close() ---
    Info -   0.052543 s    955.0 uS  2024-04-16 08_00_23 - flush request
+
+  Level     TimeStamp    DeltaTime    Message
+   Info -   0.000000 s        0 nS  Kt34400(USB0::0x2A8D::0x8E01::CN62180061::0::INSTR, true, true, QueryInstrStatus=True, Simulate=False, Trace=True)
+  Debug -   0.054658 s     54.7 mS    Command: *IDN?
+  Error -   0.070074 s     15.4 mS  VI_ERROR_IO: I/O error
+   Info -   0.070443 s    369.4 uS  --- Kt34400.Close() ---
+   Info -   0.072833 s      2.4 mS  2024-04-16 10_24_01 - flush request
