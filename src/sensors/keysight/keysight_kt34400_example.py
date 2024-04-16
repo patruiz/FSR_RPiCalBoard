@@ -27,7 +27,7 @@ def main():
     resource_name = 'USB0::0x2A8D::0x8E01::CN62180061::0::INSTR'
     idQuery = True
     reset   = True
-    options = "QueryInstrStatus=False, Simulate=False, Trace=False"
+    options = "QueryInstrStatus=True, Simulate=False, Trace=True"
 
     try:
         print("\n  keysight_kt34400 Python API Example1\n")
@@ -46,6 +46,7 @@ def main():
         print('  model:      ', driver.identity.instrument_model)
         print('  resource:   ', driver.driver_operation.io_resource_descriptor)
         print('  options:    ', driver.driver_operation.driver_setup)
+        print(' ')
 
 
         # Reset the DMM
@@ -111,9 +112,11 @@ def main():
         #"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
         #Configure the meter to 10k ohm range and fast mode (least resolution)
-        driver.resistance.configure(10E+3,m.Resolution.MAX)
+        # driver.resistance.configure(10E+3,m.Resolution.MAX)
+        driver.resistance.configure()
+        data = driver.measurement.read()
 
-        data = driver.measurement.read(max_time)
+        # data = driver.measurement.read(max_time)
         print("2-Wire Resistance measurement: ,",data, " Ohms")
 
         #"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

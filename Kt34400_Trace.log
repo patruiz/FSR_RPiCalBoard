@@ -1,0 +1,64 @@
+
+  Level     TimeStamp    DeltaTime    Message
+   Info -   0.000000 s        0 nS  Kt34400(USB0::0x2A8D::0x8E01::CN62180061::0::INSTR, true, true, QueryInstrStatus=True, Simulate=False, Trace=True)
+  Debug -   0.043728 s     43.7 mS    Command: *IDN?
+  Debug -   0.072157 s     28.4 mS    Response: Keysight Technologies,EDU34450A,CN62180061,K-01.07.03-01.00-01.10-01.05
+  Debug -   0.072209 s     51.8 uS    Command: *RST;*OPC?
+  Debug -   0.275261 s    203.1 mS    Response: 1
+  Debug -   0.275270 s      9.1 uS    Command: *CLS
+   Info -   0.275554 s    284.2 uS  IviDriverIdentity.GetInstrumentModel()
+   Info -   0.275560 s      5.9 uS    Returned: value=EDU34450A
+   Info -   0.276485 s    925.6 uS  IviDriverIdentity.GetVendor()
+   Info -   0.276495 s      9.3 uS    Returned: value=Keysight Technologies
+   Info -   0.277041 s    546.0 uS  IviDriverIdentity.GetInstrumentModel()
+   Info -   0.277043 s      2.7 uS    Returned: value=EDU34450A
+   Info -   0.277334 s    290.3 uS  IviDriverOperation.GetIOResourceDescriptor()
+   Info -   0.277337 s      3.4 uS    Returned: value=USB0::0x2A8D::0x8E01::CN62180061::0::INSTR
+   Info -   0.277585 s    248.1 uS  IviDriverOperation.GetDriverSetup()
+   Info -   0.277588 s      2.7 uS    Returned: value=QueryInstrStatus=True, Simulate=False, Trace=True
+   Info -   0.277961 s    373.1 uS  IviDriverUtility.Reset()
+  Debug -   0.277968 s      6.8 uS    Command: *RST;*OPC?
+  Debug -   0.485337 s    207.4 mS    Response: 1
+   Info -   0.485390 s     52.9 uS  Trigger.SetSource(value=Immediate)
+  Debug -   0.485403 s     13.4 uS    Command: TRIG:SOUR IMM
+  Debug -   0.485584 s    181.2 uS    Command: *ESR?
+  Debug -   0.494936 s      9.4 mS    Response: +0
+   Info -   0.495030 s     94.0 uS  DCVoltage.Configure(range=10, resolution=Max)
+  Debug -   0.495052 s     21.7 uS    Command: CONF 10,MAX
+  Debug -   0.495240 s    187.9 uS    Command: *ESR?
+  Debug -   0.588344 s     93.1 mS    Response: +0
+   Info -   0.588406 s     61.8 uS  Measurement.Read(maxTime=5s)
+  Debug -   0.588422 s     16.4 uS    Command: READ?
+  Error -   0.699007 s    110.6 mS  VI_ERROR_TMO: A timeout occurred
+   Info -   0.699603 s    596.0 uS  SystemTracing.GetFileName()
+   Info -   0.699609 s      5.9 uS    Returned: value=Kt34400_Trace.log
+   Info -   0.701609 s      2.0 mS  --- Kt34400.Close() ---
+   Info -   0.714927 s     13.3 mS  2024-04-16 02_35_47 - flush request
+
+  Level     TimeStamp    DeltaTime    Message
+   Info -   0.000000 s        0 nS  Kt34400(USB0::0x2A8D::0x8E01::CN62180061::0::INSTR, true, true, QueryInstrStatus=True, Simulate=False, Trace=True)
+  Debug -   0.050485 s     50.5 mS    Command: *IDN?
+  Error -   0.066319 s     15.8 mS  VI_ERROR_IO: I/O error
+   Info -   0.066601 s    282.0 uS  --- Kt34400.Close() ---
+   Info -   0.067055 s    454.5 uS  2024-04-16 04_01_00 - flush request
+
+  Level     TimeStamp    DeltaTime    Message
+   Info -   0.000000 s        0 nS  Kt34400(USB0::0x2A8D::0x8E01::CN62180061::0::INSTR, true, true, QueryInstrStatus=True, Simulate=False, Trace=True)
+  Debug -   0.062347 s     62.3 mS    Command: *IDN?
+  Error -   0.078851 s     16.5 mS  VI_ERROR_IO: I/O error
+   Info -   0.079217 s    365.4 uS  --- Kt34400.Close() ---
+   Info -   0.079541 s    324.5 uS  2024-04-16 04_01_21 - flush request
+
+  Level     TimeStamp    DeltaTime    Message
+   Info -   0.000000 s        0 nS  Kt34400(USB0::0x2A8D::0x8E01::CN62180061::0::INSTR, true, true, QueryInstrStatus=True, Simulate=False, Trace=True)
+  Debug -   0.056252 s     56.3 mS    Command: *IDN?
+  Error -   0.081679 s     25.4 mS  VI_ERROR_IO: I/O error
+   Info -   0.081969 s    289.4 uS  --- Kt34400.Close() ---
+   Info -   0.082287 s    318.7 uS  2024-04-16 04_01_30 - flush request
+
+  Level     TimeStamp    DeltaTime    Message
+   Info -   0.000000 s        0 nS  Kt34400(USB0::0x2A8D::0x8E01::CN62180061::0::INSTR, true, true, QueryInstrStatus=True, Simulate=False, Trace=True)
+  Debug -   0.043816 s     43.8 mS    Command: *IDN?
+  Error -   0.064816 s     21.0 mS  VI_ERROR_IO: I/O error
+   Info -   0.065127 s    311.2 uS  --- Kt34400.Close() ---
+   Info -   0.065618 s    490.8 uS  2024-04-16 04_01_49 - flush request
