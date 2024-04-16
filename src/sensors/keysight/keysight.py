@@ -1,6 +1,7 @@
 import keysight_kt34400 
 import keysight_kt34400.keysight_kt34400
 import numpy as np 
+import keyboard
 import datetime
 import time
 import csv
@@ -12,10 +13,7 @@ def store_data(data, fsr_num, save_data = True):
         datetime_stamp = datetime.now().strftime('%d%b%y_%H-%M-%S')
         file_name = f"FSR{fsr_num}_calibration_{datetime_stamp}.csv"
         file_path = os.path.join(save_dir, file_name)
-        
-        with open(file_path, 'w', newline = '') as csvfile:
-            writer = csv.writer(csvfile)
-            writer.writerow(data)
+        print(file_path)
 
 def main(resource_name):
     data = []
@@ -52,10 +50,10 @@ def main(resource_name):
         try:
             while True:
                 val = driver.measurement.read(sample_delay)
+                print(val)
                 data.append(val)
         except KeyboardInterrupt:
-            store_data(data, '1', False)
-            
+            store_data(data, '1', True)
 
     except Exception as e:
         print("\n Exception:", e.__class__.__name__, e.args)

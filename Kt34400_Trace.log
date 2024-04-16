@@ -62,3 +62,31 @@
   Error -   0.064816 s     21.0 mS  VI_ERROR_IO: I/O error
    Info -   0.065127 s    311.2 uS  --- Kt34400.Close() ---
    Info -   0.065618 s    490.8 uS  2024-04-16 04_01_49 - flush request
+
+  Level     TimeStamp    DeltaTime    Message
+   Info -   0.000000 s        0 nS  Kt34400(USB0::0x2A8D::0x8E01::CN62180061::0::INSTR, true, true, QueryInstrStatus=True, Simulate=False, Trace=True)
+  Debug -   0.051385 s     51.4 mS    Command: *IDN?
+  Error -   0.067252 s     15.9 mS  VI_ERROR_IO: I/O error
+   Info -   0.068118 s    867.0 uS  --- Kt34400.Close() ---
+   Info -   0.069746 s      1.6 mS  2024-04-16 07_55_46 - flush request
+
+  Level     TimeStamp    DeltaTime    Message
+   Info -   0.000000 s        0 nS  Kt34400(USB0::0x2A8D::0x8E01::CN62180061::0::INSTR, true, true, QueryInstrStatus=True, Simulate=False, Trace=True)
+  Debug -   0.032704 s     32.7 mS    Command: *IDN?
+  Error -   0.049105 s     16.4 mS  VI_ERROR_IO: I/O error
+   Info -   0.049397 s    292.0 uS  --- Kt34400.Close() ---
+   Info -   0.050218 s    820.9 uS  2024-04-16 07_56_00 - flush request
+
+  Level     TimeStamp    DeltaTime    Message
+   Info -   0.000000 s        0 nS  Kt34400(USB0::0x2A8D::0x8E01::CN62180061::0::INSTR, true, true, QueryInstrStatus=True, Simulate=False, Trace=True)
+  Debug -   0.043964 s     44.0 mS    Command: *IDN?
+  Error -   0.060332 s     16.4 mS  VI_ERROR_IO: I/O error
+   Info -   0.060631 s    298.3 uS  --- Kt34400.Close() ---
+   Info -   0.061539 s    908.2 uS  2024-04-16 08_00_12 - flush request
+
+  Level     TimeStamp    DeltaTime    Message
+   Info -   0.000000 s        0 nS  Kt34400(USB0::0x2A8D::0x8E01::CN62180061::0::INSTR, true, true, QueryInstrStatus=True, Simulate=False, Trace=True)
+  Debug -   0.035314 s     35.3 mS    Command: *IDN?
+  Error -   0.051308 s     16.0 mS  VI_ERROR_IO: I/O error
+   Info -   0.051588 s    280.2 uS  --- Kt34400.Close() ---
+   Info -   0.052543 s    955.0 uS  2024-04-16 08_00_23 - flush request
